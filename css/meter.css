@@ -1,0 +1,170 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #44474e;
+} */
+
+#gauge {
+  display: flex;
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 120px;
+}
+
+#major-ticks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+#major-ticks span {
+  position: absolute;
+  font-size: 0.7em;
+  color: #afafaf;
+}
+
+#major-ticks span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#major-ticks span:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#major-ticks span:nth-child(3) {
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+#minor-ticks {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minor-ticks span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #afafaf;
+  transform: rotate(calc((var(--i) - 1) * 9 * 1deg));
+}
+
+#minor-ticks::after {
+  content: "";
+  position: absolute;
+  width: 93%;
+  height: 93%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#minor-ticks-bottom-mask {
+  position: absolute;
+  width: 80%;
+  height: 49%;
+  bottom: 0;
+  background: #fff;
+}
+
+#bottom-circle {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: linear-gradient(#efefef, #ffffff);
+  border-radius: 50%;
+  box-shadow: inset 0 5px 5px #e7e7e7;
+}
+
+svg {
+  position: absolute;
+}
+
+svg path {
+  transition: 1s;
+}
+
+#center-circle {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: linear-gradient(180deg, #ffffff 0%, #e7ecf1 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#center-circle::before {
+  content: "";
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  background: linear-gradient(0deg, #ffffff 0%, #e7ecf1 100%);
+  border-radius: 50%;
+}
+
+#name {
+  position: absolute;
+  font-size: 1em;
+  color: #7f7f7f;
+  font-weight: 700;
+  top: 40px;
+}
+
+#center-circle img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 20px;
+}
+
+#temperature1 {
+  position: absolute;
+  font-size: 3em;
+  color: #afafaf;
+}
+
+#temperature2 {
+  position: absolute;
+  font-size: 3em;
+  color: #afafaf;
+}
+
+#range1 {
+  position: absolute;
+  width: 80%;
+  bottom: 10px;
+}
+
+#range2 {
+  position: absolute;
+  width: 80%;
+  bottom: 10px;
+}

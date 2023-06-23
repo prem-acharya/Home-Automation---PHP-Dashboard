@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #000000;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+}
+
+/* Style the logo */
+.logo {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Style the menu items */
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-items li {
+  margin-right: 20px;
+}
+
+.menu-items li:last-child {
+  margin-right: 0;
+}
+
+.menu-items li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-items li a:hover {
+  color: #a8c0ff;
+}
+
+/* Style the dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #000000;
+  color: aliceblue;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Make the navbar responsive */
+@media only screen and (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-items li {
+    margin: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    margin: 10px 0;
+    padding: 0;
+    background-color: transparent;
+    color: #000000;
+  }
+
+  .dropdown-menu li {
+    margin: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}

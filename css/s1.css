@@ -1,0 +1,239 @@
+.switch-holder {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 380px;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.7),
+    10px 10px 10px rgba(0, 0, 0, 0.2),
+    inset 8px 8px 15px rgba(255, 255, 255, 0.7),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-label {
+  padding: 0 20px 0 10px;
+}
+
+.switch-label i {
+  margin-right: 5px;
+}
+
+.switch-toggle {
+  height: 40px;
+}
+
+.switch-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+.switch-toggle input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0;
+  cursor: pointer;
+  box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.switch-toggle input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "OFF";
+  font-size: 13px;
+  text-align: center;
+  line-height: 25px;
+  top: 8px;
+  left: 8px;
+  width: 45px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #eeeeee;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
+    3px 3px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked + label::before {
+  left: 50%;
+  content: "ON";
+  color: #fff;
+  background-color: #000000;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #ffffff;
+}
+
+.switch_container {
+  font-size: 17px;
+  background-color: aqua;
+  margin-left: 527px;
+  margin-top: 55px;
+  height: 485px;
+  width: 472px;
+  padding-top: 0.2px;
+  border-radius: 50px;
+  align-items: center;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+div {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: 50px;
+}
+
+/* Small screens */
+/* @media only screen and (max-width: 600px) {
+  .switch-holder {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    padding: 5px 10px;
+  }
+
+  .switch-label {
+    padding: 0 10px 0 5px;
+  }
+
+  .switch-toggle {
+    height: 30px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label::before {
+    font-size: 10px;
+    line-height: 20px;
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 20px;
+    border-radius: 15px;
+  }
+
+  .switch-toggle input[type="checkbox"]:checked + label::before {
+    left: 25%;
+  }
+
+  .switch_container {
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 300px;
+    width: 280px;
+    border-radius: 30px;
+  }
+
+  div {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+
+/* Medium screens */
+/* @media only screen and (min-width: 601px) and (max-width: 960px) {
+  .switch-holder {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 250px;
+    padding: 7px 15px;
+  }
+
+  .switch-label {
+    padding: 0 15px 0 7px;
+  }
+
+  .switch-toggle {
+    height: 35px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label {
+    width: 80px;
+    height: 35px;
+    border-radius: 17.5px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label::before {
+    font-size: 12px;
+    line-height: 23px;
+    top: 6px;
+    left: 6px;
+    width: 35px;
+    height: 23px;
+    border-radius: 17.5px;
+  }
+
+  .switch-toggle input[type="checkbox"]:checked + label::before {
+    left: 33.33%;
+  }
+
+  .switch_container {
+    margin-left: 50px;
+    margin-top: 60px;
+    height: 400px;
+    width: 350px;
+    border-radius: 40px;
+  }
+
+  div {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .switch-holder {
+    margin-top: 75px;
+    margin-left: 150px;
+    width: 500px;
+    padding: 20px;
+  }
+
+  .switch-label {
+    padding: 0 20px 0 10px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .switch-toggle input[type="checkbox"] + label::before {
+    font-size: 15px;
+    line-height: 30px;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 25px;
+  }
+
+  .switch-toggle input[type="checkbox"]:checked + label::before {
+    left: 45%;
+  }
+
+  .switch_container {
+    margin-left: 300px;
+    margin-top: 100px;
+    height: 600px;
+    width: 600px;
+    padding-top: 10px;
+    border-radius: 75px;
+  }
+
+  div {
+    font-size: 36px;
+  }
+} */
