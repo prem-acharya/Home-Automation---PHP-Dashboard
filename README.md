@@ -33,9 +33,6 @@ Welcome to the Home Automation project! This project aims to provide a user-frie
 ![image](https://github.com/prem-acharya/Home-Automation---PHP-Dashboard/assets/102874190/5c62ae66-7f9e-47dd-9fac-378e3b9d1bf0)
 
 
-![image](https://github.com/prem-acharya/Home-Automation---PHP-Dashboard/assets/102874190/a66d041e-7f00-4c5b-9a15-daaf0e345675)
-
-
 ![image](https://github.com/prem-acharya/Home-Automation---PHP-Dashboard/assets/102874190/855a9d3c-49f5-40b7-af61-21399ebaa951)
 
 
