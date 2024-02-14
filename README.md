@@ -1,4 +1,4 @@
-# Home Automation Project
+# Home Automation
 
 Welcome to the Home Automation project! This project aims to provide a user-friendly interface for controlling and monitoring various devices in your home, such as fans, AC, TV, and lights. The system also displays real-time temperature and humidity data.
 
